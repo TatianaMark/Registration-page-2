@@ -98,7 +98,6 @@ function validateForm() {
 
 // Проверка формы входа
 function checkSignInForm() {
-    console.log('Проверка формы входа');
 
     // Сбрасываем предыдущие ошибки
     errorEmptyUsername.style.display = 'none';

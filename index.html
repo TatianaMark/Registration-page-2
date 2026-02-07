@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeWorks</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+<main class="main">
+    <img src="images/homeWorks.png" alt="logo" class="logo">
+    <section class="first">
+        <div class="main-content">
+            <h1 id="mainTitle" class="main-title">Get your free account</h1>
+            <p class="main-text" id="main-text">Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.</p>
+            <form class="form" id="signup-form">
+                <label class="label" for="name" id="labelName">Full Name</label>
+                <input class="form-input" type="text" id="name">
+                <div class="error" id="error-empty-name">Заполните поле Full Name</div>
+                <div class="error" id="error-wrong-name">Full Name может содержать только буквы и пробел</div>
+
+                <label class="label" for="userName" id="userNameLabel">Your username</label>
+                <input class="form-input" type="text" id="userName">
+                <div class="error" id="error-empty-username">Заполните поле Your username</div>
+                <div class="error" id="error-wrong-username">Your username может содержать только буквы, цифры, символ
+                    подчеркивания и тире
+                </div>
+
+                <label class="label" for="userName" id="labelEmail">E-mail</label>
+                <input class="form-input"  id="email">
+                <div class="error" id="error-empty-email">Заполните поле E-mail</div>
+                <div class="error" id="error-wrong-email">Введите email в формате name@example.com</div>
+
+                <label class="label" for="password" id="password-label">Password</label>
+                <input class="form-input" type="password" id="password">
+                <div class="error" id="error-empty-password">Заполните поле Password</div>
+                <div class="error" id="error-wrong-password">Поле password должно содержать хотя бы одна буква в верхнем
+                    регистре, цифру и спецсимвол
+                </div>
+
+                <label class="label" for="repeatPassword" id="labelRepeatPassword">Repeat Password</label>
+                <input class="form-input" type="password" id="repeatPassword">
+                <div class="error" id="error-empty-repeatpassword">Заполните поле Repeat Password</div>
+                <div class="error" id="error-wrong-repeatpassword">Password и Repeat Password должны совпадать</div>
+
+                <label class="form-checkbox" for="agreement" id="labelAgreement">
+                    <input class="checkbox" type="checkbox" id="agreement" name="agreement">
+                    <p>Agree to our Terms of Service and Privacy Statement</p>
+                </label>
+                <div class="error" id="error-agreement">Необходимо принять условия соглашения</div>
+                <div class="button-wrap">
+                    <button id="submitButton" class="btn">Sign Up</button>
+                </div>
+            </form>
+            <div class="question-wrap">
+                <a href="#" class="question" id="question">Already have an account?</a>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <img src="images/image.png" alt="laptop" class="image">
+    </section>
+</main>
+
+<div id="success-popup" class="popup">
+    <div id="popup-content" class="popup-content">
+        <p>На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию</p>
+        <button id="popup-ok-button">ОК</button>
+    </div>
+</div>
+
+<script src="scripts/script2.js"></script>
+</body>
+</html>
